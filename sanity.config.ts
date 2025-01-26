@@ -17,6 +17,7 @@ export default defineConfig({
   basePath: '/studio',
   projectId,
   dataset,
+  useCdn: process.env.NODE_ENV === "production",
   schema,
   plugins: [
     structureTool({ structure }),
